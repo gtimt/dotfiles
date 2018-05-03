@@ -1,0 +1,16 @@
+[user]
+	name = t333ura
+	email = t333ura@gmail.com
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+	quotepath = false
+	pager = less -m
+	excludesfile = ~/.gitignore_global
+	autocrlf = false
+	whitespace = cr-at-eol
+[color]
+	ui = true
+[push]
+	default = simple
+[help]
+	autocorrect = true

@@ -1,0 +1,21 @@
+#VirtualBox
+#仮想マシンを作成
+#Guest Additioinをインストール
+#クリップボード, ドラッグ&ドロップを双方向化
+#共有フォルダを設定, ホームにシンボリックリンクを作成
+#ディレクトリ名を英語化 LANG=C xdg-user-dirs-gtk-update
+#デフォルトエディタをVimに変更 sudo update-alternatives --config editor
+#anyenvをインストール
+#pyenv + pyenv-virtualenv, anacondaをインストール
+	nodenev, node.jsをインストール
+#Unity デスクトップ環境の設定を色々
+	?Google日本語入力
+#terminatorをインストール
+#terminatorの設定 solarized
+#.bashrc プロンプトの色とか
+#.dircolors solarized
+#フォント Ricty Diminished
+#.tmux.conf
+#vim solarized
+vimrc
+zshの設定
