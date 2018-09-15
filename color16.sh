@@ -13,9 +13,9 @@ do
         done
         echo
     done
-    echo
 done
-
+echo
+printf " \\\e[m\n"
 echo
 echo "付加属性"
 echo "0m リセット"

@@ -29,18 +29,21 @@ PowerShellやコマンドプロンプト(~~そんなもん使わねぇよ~~)等�
 実行すれば良い. (スタートメニュー等からではなくpowershell.exeを直接起動しないと反映されないかも? 下記参照.)
 
 ##### 注意
-~~PowerShellの本体は`C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe`だが,  
+PowerShellの本体は`C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe`だが,  
 スタートメニューにピン留めしたPowerShellを起動すると  
 `C:/Users/${ユーザー名}/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Windows PowerShell/`にあるショートカットが呼ばれる.  
 このショートカットは起動時の色やフォント等の設定を独自に保持しており, ショートカット作成後にcolortoolで加えた変更は反映されない.  
 colortoolを使った後にpowershell.exeのショートカットを新たに作成し, 古いショートカットは削除するか, 新しいショートカットよりもファイル名が辞書順で後ろになるようにリネームするのが良い.  
-ただし, ショートカットのプロパティで作業ディレクトリを`%HOMEDRIVE%%HOMEPATH%`にすること.~~  
-2018/09/07の時点ではこれをやらなくても大丈夫になっていた.
+ただし, ショートカットのプロパティで作業ディレクトリを`%HOMEDRIVE%%HOMEPATH%`にすること.  
+｢プロパティ｣ではなく｢既定値｣で文字の色などを選ばないと変更が保持されない?  
 
 ### Cmder
-ターミナルエミュレータ. 最初からタブ機能が使えるのでmintty+tmuxとかを使って無駄に躓くより良いと思った.  
+~~ターミナルエミュレータ. 最初からタブ機能が使えるのでmintty+tmuxとかを使って無駄に躓くより良いと思った.  
 2018/09/07時点ではコンテキストメニューの｢ここで開く｣がうまく機能しなかったので[ここ](https://syon.github.io/refills/rid/1498646/)参照.  
-Solarizedのカラースキームがあるが暗色と明色 (black/brblack等) が入れ替わっているので[公式](https://ethanschoonover.com/solarized/)の値を見て修正.
+Solarizedのカラースキームがあるが暗色と明色 (black/brblack等) が入れ替わっているので[公式](https://ethanschoonover.com/solarized/)の値を見て修正.~~
+
+### Hyper
+ターミナルエミュレータ. 設定は全て`.hyper.js`ファイルで行う. ファイル本体は`dotfiles`ディレクトリに置き, `MKLINK`コマンドでシンボリックリンクを貼ると良い.  
 
 ### Windows Subsystem for Linux (WSL)
 2017年のWindows 10 Fall Creators Updateでベータが取れて正式な機能になった.  
